@@ -202,7 +202,22 @@
             </ul>
         </div>
     </footer>
+<script>
+    function colorChange(event, ui) {
+        var r = 0;
+        var g = $("#green").slider("value");
+        var b = $("#blue").slider("value");
+        doDraw(hex(r), hex(g), hex(b));
+      }
 
+      function initSlider(id) {
+        $(id).slider({max: 255, slide: colorChange, change: colorChange});
+      }
+        function doDraw(r, g, b) {
+          color.setStyle('backgroundColor', r+b+g);
+        }
+
+</script>
 <script>
             YUI().use('slider', 'color', function(Y){
                 // sliders
