@@ -257,7 +257,7 @@ section.features .section-heading {
   margin-bottom: 100px;
 }
 section.features .section-heading h2 {
-  margin-top: 0;
+  margin-top: 30px;
 }
 section.features .section-heading p {
   margin-bottom: 0;
@@ -301,7 +301,7 @@ section.cta {
   -o-background-size: cover;
   background-position: center;
   background-image: url('../img/bg-cta.jpg');
-  padding: 10px 0;
+  padding: 250px 0;
 }
 section.cta .cta-content {
   position: relative;
