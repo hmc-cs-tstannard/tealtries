@@ -2,7 +2,20 @@
 <html lang="en">
 
 <head>
+    <style>
+        .sliders {
+            display: inline-block;
+            zoom: 1; *display: inline;
+            width: 210px;
+            vertical-align: middle;
+            overflow: hidden;
+        }
+        .color {
+            width: 100%;
+            border: 1px solid rgba(0, 0, 0, 0.5);
+        }
 
+    </style>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -222,6 +235,7 @@
     bVal.set('text', bSlider.get('value'));
     updateColors();
             });
+
     </script>
     <!-- jQuery -->
     <script src="vendor/jquery/jquery.min.js"></script>
