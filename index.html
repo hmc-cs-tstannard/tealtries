@@ -31,6 +31,7 @@
         .silders
         {
             padding-left: 50px;
+            margin-left: 100px;
             float:left;
         }
         .button
@@ -158,11 +159,11 @@
                 <div class="sliders yui3-skin-sam">
                     <dl>
                     <sliders>
-                        <input type="range" id="myRange" value="255">
+                        <input type="range" id="myRangeBlue" value="255">
                         <button onclick="myFunction()">Apply Blue Value</button>
                         <p id="demo"></p>
 
-                        <input type="range" id="myRange" value="255">
+                        <input type="range" id="myRangeGreen" value="255">
                         <button onclick="myFunction()">Apply Green Value</button>
                         <p id="demo"></p>
 
@@ -271,8 +272,12 @@
     </script>
     <script>
     function myFunction() {
-    var x = document.getElementById("myRange").value;
-    document.getElementById("demo").innerHTML = x;
+
+        // color chip
+        color = Y.one('.color');
+    var b = document.getElementById("myRangeBlue").value;
+    var g = document.getElementById("myRangeGreen").value;
+    rgbStr = Y.Color.fromArray([0,g,b], Y.Color.TYPES.RGB);
     }
     </script>
     <!-- jQuery -->
