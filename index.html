@@ -9,7 +9,6 @@
             width: 210px;
             vertical-align: middle;
             overflow: hidden;
-            color: black;
         }
         .color {
             width: 100%;
@@ -149,6 +148,7 @@
                 </div>
                 <div class="sliders yui3-skin-sam">
                     <dl>
+                        <button onclick="myFunction()">Try it</button>
                         <dt>R: <span id="r-val" class="val"></span></dt><dd id="r-slider"></dd>
                         <dt>G: <span id="g-val" class="val"></span></dt><dd id="g-slider"></dd>
                         <dt>B: <span id="b-val" class="val"></span></dt><dd id="b-slider"></dd>
@@ -250,6 +250,13 @@
     updateColors();
             });
 
+    </script>
+    <script>
+    function myFunction() {
+        var x = document.createElement("INPUT");
+        x.setAttribute("type", "range");
+        document.body.appendChild(x);
+    }
     </script>
     <!-- jQuery -->
     <script src="vendor/jquery/jquery.min.js"></script>
