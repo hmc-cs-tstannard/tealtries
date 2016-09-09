@@ -135,6 +135,7 @@
         $(id).slider({max: 255, slide: colorChange, change: colorChange});
       }
         function doDraw(r, g, b) {
+            var dc = document.getElementById('drawing');
           color.setStyle('backgroundColor', r+b+g);
         }
         $(document).ready(function() {
