@@ -285,7 +285,6 @@ section.features .feature-item h3 {
 section.features .feature-item i {
   font-size: 80px;
   background: -webkit-linear-gradient(to left, #7b4397, #dc2430);
-  background: linear-gradient(to left, #7b4397, #dc2430);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -447,4 +446,11 @@ img::-moz-selection {
 }
 body {
   webkit-tap-highlight-color: #222222;
+}
+.sliders {
+    display: inline-block;
+    zoom: 1; *display: inline;
+    width: 210px;
+    vertical-align: middle;
+    overflow: hidden;
 }
