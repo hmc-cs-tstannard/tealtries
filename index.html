@@ -131,9 +131,9 @@
                 <div class="sliders">
                 <dl>
                 <p> green </p>
-                    <input type="range" id="green" value="255">
+                    <input type="range" id="green" value="155">
                     <p> blue </p>
-                    <input type="range" id="blue" value="255">
+                    <input type="range" id="blue" value="155">
                     <button onclick="myFunction()">Change Color</button>
                 </dl>
             </div>
@@ -197,7 +197,7 @@
 
     <script type="text/javascript">
     function myFunction() {
-            document.getElementById("teal").style.backgroundColor = '#00' + document.getElementById("green").value + document.getElementById("blue").value;
+            document.getElementById("teal").style.backgroundColor = '#00' + (document.getElementById("green").value+50) + (document.getElementById("blue").value+50);
     }
 </script>
     
