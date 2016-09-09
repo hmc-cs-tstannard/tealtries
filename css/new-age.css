@@ -257,7 +257,7 @@ section.features .section-heading {
   margin-bottom: 100px;
 }
 section.features .section-heading h2 {
-  margin-top: 70px;
+  margin-top: 50px;
 }
 section.features .section-heading p {
   margin-bottom: 0;
@@ -459,4 +459,7 @@ body {
 
 .map iframe {
     pointer-events: none;
+}
+.contact2{
+  height: 200px;
 }
