@@ -174,7 +174,7 @@
         </div>
     </footer>
     <script>
-            YUI().use('slider', 'color', function(Y){
+    YUI().use('slider', 'color', function(Y){
                 // sliders
     var rSlider = new Y.Slider({ min: 0, max: 255, value: Math.round(Math.random()*255) }),
         gSlider = new Y.Slider({ min: 0, max: 255, value: Math.round(Math.random()*255) }),
@@ -198,6 +198,7 @@
     rSlider.after('thumbMove', function(e) {
         rVal.set('text', rSlider.get('value'));
         updateColors();
+    });
     gSlider.after('thumbMove', function(e) {
         gVal.set('text', gSlider.get('value'));
         updateColors();
