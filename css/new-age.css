@@ -457,3 +457,16 @@ body {
     width: 100%;
     border: 1px solid rgba(0, 0, 0, 0.5);
 }
+.sliders dt {
+    float: left;
+    clear: left;
+    width: 50px;
+    height: 40px;
+    line-height: 40px;
+}
+.sliders dd {
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    margin: 0;
+}
