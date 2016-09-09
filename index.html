@@ -120,6 +120,29 @@
         </div>
     </section>
 
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+
+    <script type="text/javascript">
+    function colorChange(event, ui) {
+        var r = 0;
+        var g = $("#green").slider("value");
+        var b = $("#blue").slider("value");
+        doDraw(hex(r), hex(g), hex(b));
+      }
+
+      function initSlider(id) {
+        $(id).slider({max: 255, slide: colorChange, change: colorChange});
+      }
+        function doDraw(r, g, b) {
+          color.setStyle('backgroundColor', r+b+g);
+        }
+        $(document).ready(function() {
+        initSlider("#green");
+        initSlider("#blue");
+    })
+</script>
+
     <section id="features" class="features">
         <div class="color">
             <div class="row">
@@ -133,6 +156,7 @@
                 <dl>
                     <br>green:<div class="slider" id="green"></div>
                     <br>blue:<div class="slider" id="blue"></div>
+
                 </dl>
             </div>
             </div>
@@ -182,28 +206,6 @@
         </div>
     </footer>
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
-
-    <script type="text/javascript">
-    function colorChange(event, ui) {
-        var r = 0;
-        var g = $("#green").slider("value");
-        var b = $("#blue").slider("value");
-        doDraw(hex(r), hex(g), hex(b));
-      }
-
-      function initSlider(id) {
-        $(id).slider({max: 255, slide: colorChange, change: colorChange});
-      }
-        function doDraw(r, g, b) {
-          color.setStyle('backgroundColor', r+b+g);
-        }
-        $(document).ready(function() {
-        initSlider("#green");
-        initSlider("#blue");
-    })
-</script>
     
     <!-- jQuery -->
     <script src="vendor/jquery/jquery.min.js"></script>
