@@ -99,6 +99,7 @@
 
     <section id="download" class="download bg-primary text-center">
         <div class="container">
+        <div> class="color"
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">
                     <h2 class="section-heading">My name is Teal</h2>
@@ -106,10 +107,11 @@
                 </div>
             </div>
         </div>
+        </div>
     </section>
 
     <section id="features" class="features">
-        <div class="container">
+        <div class="color">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <div class="section-heading">
@@ -201,9 +203,10 @@
 
     // update the colors strings
     function updateColors() {
-        var g = gSlider.get('value'),
+        var r = 0,
+            g = gSlider.get('value'),
             b = bSlider.get('value'),
-            rgbStr = Y.Color.fromArray([0,g,b], Y.Color.TYPES.RGB);
+            rgbStr = Y.Color.fromArray([r,g,b], Y.Color.TYPES.RGB);
 
         color.setStyle('backgroundColor', rgbStr);
     }
@@ -211,7 +214,7 @@
     bVal.set('text', bSlider.get('value'));
     updateColors();
             });
-        </script>
+    </script>
     <!-- jQuery -->
     <script src="vendor/jquery/jquery.min.js"></script>
 
