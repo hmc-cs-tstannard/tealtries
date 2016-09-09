@@ -3,15 +3,34 @@
 
 <head>
     <style>
-      .slider {
-        width: 300px;
-      }
-    .color {
-        display: inline-block;
-        margin: 0 20px;
-        vertical-align: middle;
-        width: 100%;
-    }
+        .sliders {
+    display: inline-block;
+    zoom: 1; *display: inline;
+    width: 210px;
+    vertical-align: middle;
+    overflow: hidden;
+}
+.color {
+    display: inline-block;
+    margin: 0 20px;
+    vertical-align: middle;
+    width: 100%;
+}
+.sliders dt,
+{
+    float: left;
+    clear: left;
+    width: 50px;
+    height: 40px;
+    line-height: 40px;
+}
+.sliders dd,
+{
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    margin: 0;
+}
     </style>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -43,9 +62,7 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-    
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+
 </head>
 
 <body id="page-top">
@@ -122,43 +139,23 @@
         </div>
     </section>
 
-
-    <script type="text/javascript">
-    function colorChange(event, ui) {
-        var r = 0;
-        var g = $("#green").slider("value");
-        var b = $("#blue").slider("value");
-        doDraw(hex(r), hex(g), hex(b));
-      }
-
-      function initSlider(id) {
-        $(id).slider({max: 255, slide: colorChange, change: colorChange});
-      }
-        function doDraw(r, g, b) {
-            var dc = document.getElementById('drawing');
-          color.setStyle('backgroundColor', r+b+g);
-        }
-        $(document).ready(function() {
-        initSlider("#green");
-        initSlider("#blue");
-    })
-</script>
-
     <section id="features" class="features">
         <div class="color">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <div class="section-heading">
                         <h2>50 Shades of Teal</h2>
-                        <p class="text-muted">teal = green + blue</p>
+                        <p class="text-muted">teal = blue + green</p>
                         <hr>
                     </div>
                 </div>
+                <div class="sliders">
                 <dl>
-                    <br>green:<div class="slider" id="green"></div>
-                    <br>blue:<div class="slider" id="blue"></div>
-
+                    <input type="range" id="green" value="255">
+                    <input type="range" id="blue" value="255">
+                    <button onclick="myFunction()">Change Color</button>
                 </dl>
+            </div>
             </div>
             </div>
     </section>
@@ -206,7 +203,14 @@
             </ul>
         </div>
     </footer>
-
+    
+    <script type="text/javascript">
+    function myFunction() {
+            var g = document.getElementById("green").value;
+            var b = document.getElementById("blue").value;
+            color.setStyle('backgroundColor', "00"+b+g);
+    }
+</script>
     
     <!-- jQuery -->
     <script src="vendor/jquery/jquery.min.js"></script>
