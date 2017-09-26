@@ -155,6 +155,12 @@
         <div class="overlay"></div>
     </section>
 
+<section>
+<div> 
+  <button id="bathroomID" onclick="addNum('bathroomID')" value="0" >add Count</button>
+</div>
+</section>
+
     <section id="contact" class="contact bg-primary">
         <div class="container">
             <h2>I <i class="fa fa-heart"></i> new friends!</h2>
@@ -191,8 +197,11 @@
     </footer>
 
     <script type="text/javascript">
-    function myFunction() {
-            document.getElementById("teal").style.backgroundColor = '#00' + document.getElementById("green").value + document.getElementById("blue").value;
+    function myFunction(bathroomID) {
+            document.getElementById('bathroomID').value += 1 ; 
+    }
+     function addNum() {
+            
     }
     </script>
 
