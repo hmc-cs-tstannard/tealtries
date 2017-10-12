@@ -157,8 +157,8 @@
 
 <section>
 <div> 
-    <p id="insert"></p>
-    <button id="bathroomID" onclick="addNum('bathroomID')" value="0" >add Count</button>
+    <p id="theCount"> the count is: </p>
+    <button id="bathroomID" onclick="addNum('bathroomID')" value=0 >add Count</button>
 </div>
 </section>
 
@@ -200,7 +200,7 @@
     <script type="text/javascript">
     function myFunction(bathroomID) {
             document.getElementById('bathroomID').value += 1 ; 
-            document.getElementById("insert").innerHTML = document.getElementById('bathroomID').value;
+            document.getElementById("theCount").innerHTML = document.getElementById('bathroomID').value;
     }
      function addNum() {
             
