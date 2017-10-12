@@ -2,14 +2,29 @@
 <html lang="en">
 
 <head>
+    <style>
+        .sliders {
+    display: inline-block;
+    zoom: 1; *display: inline;
+    width: 210px;
+    vertical-align: middle;
+    overflow: hidden;
+    padding-left: 40px;
+}
+.color {
+    display: inline-block;
 
+    vertical-align: middle;
+    width: 100%;
+}
+    </style>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>New Age - Start Bootstrap Theme</title>
+    <title>Teal Tries</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -45,17 +60,17 @@
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Start Bootstrap</a>
+                <a class="navbar-brand page-scroll" href="#page-top">Home</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a class="page-scroll" href="#download">Download</a>
+                        <a class="page-scroll" href="#download">About</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#features">Features</a>
+                        <a class="page-scroll" href="#features">50 shades</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#contact">Contact</a>
@@ -73,23 +88,8 @@
                 <div class="col-sm-7">
                     <div class="header-content">
                         <div class="header-content-inner">
-                            <h1>New Age is an app landing page that will help you beautifully showcase your new mobile app, or anything else!</h1>
-                            <a href="#download" class="btn btn-outline btn-xl page-scroll">Start Now for Free!</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-5">
-                    <div class="device-container">
-                        <div class="device-mockup iphone6_plus portrait white">
-                            <div class="device">
-                                <div class="screen">
-                                    <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
-                                    <img src="img/demo-screen-1.jpg" class="img-responsive" alt="">
-                                </div>
-                                <div class="button">
-                                    <!-- You can hook the "home button" to some JavaScript events or just remove it -->
-                                </div>
-                            </div>
+                            <h1>Teal's 121 practice website</h1>
+                            <a href="#features" class="btn btn-outline btn-xl page-scroll">make your own teal </a>
                         </div>
                     </div>
                 </div>
@@ -99,97 +99,73 @@
 
     <section id="download" class="download bg-primary text-center">
         <div class="container">
+        <div> 
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">
-                    <h2 class="section-heading">Discover what all the buzz is about!</h2>
-                    <p>Our app is available on any mobile device! Download now to get started!</p>
-                    <div class="badges">
-                        <a class="badge-link" href="#"><img src="img/google-play-badge.svg" alt=""></a>
-                        <a class="badge-link" href="#"><img src="img/app-store-badge.svg" alt=""></a>
-                    </div>
+                    <h2 class="section-heading">My name is Teal</h2>
+                    <p>I am a Junior at Harvey Mudd College</p>
                 </div>
             </div>
+        </div>
         </div>
     </section>
 
     <section id="features" class="features">
-        <div class="container">
+        <div class="color">
+            <div id = "teal">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <div class="section-heading">
-                        <h2>Unlimited Features, Unlimited Fun</h2>
-                        <p class="text-muted">Check out what you can do with this app theme!</p>
+                        <h2>50 Shades of Teal</h2>
+                        <p class="text-muted">update both sliders for a new shade of teal</p>
                         <hr>
                     </div>
                 </div>
+                <div class="sliders">
+                <dl>
+                <p> green </p>
+                    <input type="range" id="green" value="155">
+                    <p> blue </p>
+                    <input type="range" id="blue" value="155">
+                    <button onclick="myFunction()">Change Teal</button>
+                </dl>
             </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="device-container">
-                        <div class="device-mockup iphone6_plus portrait white">
-                            <div class="device">
-                                <div class="screen">
-                                    <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
-                                    <img src="img/demo-screen-1.jpg" class="img-responsive" alt=""> </div>
-                                <div class="button">
-                                    <!-- You can hook the "home button" to some JavaScript events or just remove it -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-8">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="feature-item">
-                                    <i class="icon-screen-smartphone text-primary"></i>
-                                    <h3>Device Mockups</h3>
-                                    <p class="text-muted">Ready to use HTML/CSS device mockups, no Photoshop required!</p>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="feature-item">
-                                    <i class="icon-camera text-primary"></i>
-                                    <h3>Flexible Use</h3>
-                                    <p class="text-muted">Put an image, video, animation, or anything else in the screen!</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="feature-item">
-                                    <i class="icon-present text-primary"></i>
-                                    <h3>Free to Use</h3>
-                                    <p class="text-muted">As always, this theme is free to download and use for any purpose!</p>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="feature-item">
-                                    <i class="icon-lock-open text-primary"></i>
-                                    <h3>Open Source</h3>
-                                    <p class="text-muted">Since this theme is MIT licensed, you can use it commercially!</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
+            </div>
+            </div>
+    </section>
+    
+
+     <section id="contact2" class="map">
+        <iframe width="100%" height="250px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
+        <br />
+        <small>
+            <a href="https://twitter.com/twelveoclocke/status/724713541073272832"></a>
+        </small>
+        </iframe>
     </section>
 
     <section class="cta">
         <div class="cta-content">
             <div class="container">
-                <h2>Stop waiting.<br>Start building.</h2>
+                <h2>Cleo and I in <br>Barcelona.</h2>
                 <a href="#contact" class="btn btn-outline btn-xl page-scroll">Let's Get Started!</a>
             </div>
         </div>
         <div class="overlay"></div>
     </section>
 
+<section>
+<div> 
+    <p id="theCount"> the count is: </p>
+    <button id="bathroomID" onclick="addNum('bathroomID')" value=0 >add Count</button>
+</div>
+</section>
+
     <section id="contact" class="contact bg-primary">
         <div class="container">
-            <h2>We <i class="fa fa-heart"></i> new friends!</h2>
+            <h2>I <i class="fa fa-heart"></i> new friends!</h2>
+            <p> tbh none of these links work</p>
             <ul class="list-inline list-social">
                 <li class="social-twitter">
                     <a href="#"><i class="fa fa-twitter"></i></a>
@@ -206,21 +182,33 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2016 Start Bootstrap. All Rights Reserved.</p>
+            <p>Kim sucks </p>
             <ul class="list-inline">
                 <li>
-                    <a href="#">Privacy</a>
+                    <a href="#">teal stannard</a>
                 </li>
                 <li>
-                    <a href="#">Terms</a>
+                    <a href="#">tstannard at g dot hmc dot edu</a>
                 </li>
                 <li>
-                    <a href="#">FAQ</a>
+                    <a href="#features">click to go back to teals</a>
                 </li>
             </ul>
         </div>
     </footer>
 
+    <script type="text/javascript">
+    function myFunction(bathroomID) {
+            document.getElementById('bathroomID').value += 1 ; 
+            document.getElementById("theCount").innerHTML = document.getElementById('bathroomID').value;
+    }
+     function addNum() {
+            
+    }
+    </script>
+
+
+    
     <!-- jQuery -->
     <script src="vendor/jquery/jquery.min.js"></script>
 

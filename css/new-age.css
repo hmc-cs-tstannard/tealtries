@@ -257,7 +257,7 @@ section.features .section-heading {
   margin-bottom: 100px;
 }
 section.features .section-heading h2 {
-  margin-top: 0;
+  margin-top: 50px;
 }
 section.features .section-heading p {
   margin-bottom: 0;
@@ -284,8 +284,6 @@ section.features .feature-item h3 {
 }
 section.features .feature-item i {
   font-size: 80px;
-  background: -webkit-linear-gradient(to left, #7b4397, #dc2430);
-  background: linear-gradient(to left, #7b4397, #dc2430);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -447,4 +445,21 @@ img::-moz-selection {
 }
 body {
   webkit-tap-highlight-color: #222222;
+}
+
+.map {
+    height: 500px;
+}
+
+@media(max-width:768px) {
+    .map {
+        height: 75%;
+    }
+}
+
+.map iframe {
+    pointer-events: none;
+}
+.contact2{
+  height: 200px;
 }
